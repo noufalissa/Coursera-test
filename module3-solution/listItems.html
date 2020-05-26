@@ -1,0 +1,8 @@
+<ul class="striped">
+  <li ng-repeat="item in ctrl" >
+    Name : {{item.name}} ,<br/> Short-Name : {{item.short_name}} ,<br/>
+    Description : {{item.description}}
+    <button class='btn btn-danger pull-right'  ng-click="onRemove({index: $index});" >Don't want this one!</button>
+  </li>
+</ul>
+<div class='text text-danger'><b><i><h1> {{ result }}</h1></i><b> </div>
