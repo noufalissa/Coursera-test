@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MenuApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Module4-solution</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div >
+      <ui-view></ui-view>
+    </div>
+  </div>
+  <!-- LOCAL framework script files -->
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+
+  <!-- Load bootstrapping module and routes -->
+  <script src="js/data/data.module.js"></script>
+  <script src="js/home/menuapp.module.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/data/menudata.service.js"></script>
+
+  <!-- Load rest of files -->
+  <script src="js/categories/categories-list.controller.js"></script>
+  <script src="js/categories/items-list.controller.js"></script>
+
+  <!-- Load components -->
+  <script src="js/components/categories.component.js"></script>
+  <script src="js/components/items.component.js"></script>
+</body>
+</html>
